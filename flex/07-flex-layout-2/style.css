@@ -26,3 +26,48 @@ body {
   box-shadow: 2px 4px 16px rgba(0,0,0,.06);
   border-radius: 4px;
 }
+/* my solution starts here */
+body{
+  display: flex;
+  flex-direction: column;
+}
+.body{
+  display: flex;
+  flex:1;
+}
+.main-content{
+  padding: 20px;
+  display: flex;
+  flex-wrap:wrap;
+  gap:20px;
+  flex: 1;
+}
+.card{
+  flex:0 0 300px;
+  padding: 10px;
+}
+.header, .footer{
+  display:flex;
+  align-items: center;
+}
+.footer{
+  justify-content: center;
+}
+ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 15px
+}
+a {
+  text-decoration: none;
+}
+.sidebar {
+  display: flex;
+  flex:0 0 300px;
+}
+div[class="header"] p {
+  font-weight: 900;
+  font-size: 32px;
+}
