@@ -45,3 +45,33 @@ body, html {
 .footer {
   background-color: #393f4d;
 }
+/*beginning of my solution*/
+
+.container{
+  display: grid;
+  gap:15px;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(7, 1fr);
+  grid-template-areas: "header header header header header header header header header header header header"
+  "sidebar sidebar sidebar nav nav nav nav nav nav nav nav nav"
+  "sidebar sidebar sidebar article article article article article article article article article"
+  "sidebar sidebar sidebar article article article article article article article article article"
+  "sidebar sidebar sidebar article article article article article article article article article"
+  "sidebar sidebar sidebar article article article article article article article article article"
+  "footer footer footer footer footer footer footer footer footer footer footer footer"
+}
+.header{
+  grid-area: header;
+}
+.sidebar{
+  grid-area: sidebar;
+}
+.nav{
+  grid-area: nav;
+}
+.article{
+  grid-area: article;
+}
+.footer{
+  grid-area: footer;
+}
