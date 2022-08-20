@@ -65,12 +65,14 @@ body, html {
 }
 .sidebar{
   grid-area: sidebar;
+  overflow: auto;
 }
 .nav{
   grid-area: nav;
 }
 .article{
   grid-area: article;
+  overflow: auto;
 }
 .footer{
   grid-area: footer;
