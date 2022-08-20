@@ -89,3 +89,14 @@
   font-size: 13px;
   font-weight: normal;  
 }
+/* Start of my solution */
+.header{
+  display:grid;
+  grid-template-rows: auto;
+  grid-template-columns: 1fr 1fr;
+}
+ul{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  grid-template-rows: auto;
+}
